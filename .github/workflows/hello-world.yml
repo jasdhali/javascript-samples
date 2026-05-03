@@ -1,0 +1,10 @@
+name: GitHub Actions Demo
+on: [push] # Trigger the workflow on every push
+jobs:
+  Explore-Github-Actions:
+    runs-on:ubuntu-latest
+    steps:
+      - name: Check out repository code
+        uses: actions/checkout@v4
+      - name: Run a greeting
+        run: echo "Hello, Github Actioni!"
